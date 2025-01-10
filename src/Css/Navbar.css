@@ -1,0 +1,105 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Use the CSS variable */
+  padding: 0.5rem 7rem;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  font-size: 2rem; /* Increased size */
+  font-weight: bold; /* Bold font */
+  color: white;
+  font-family: "Inknut Antiqua", serif;
+  letter-spacing: 2px; /* Spacing between letters for more style */
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3.5rem;
+}
+
+.nav-links li {
+  position: relative;
+  perspective: 1000px; /* Create perspective for the hover effect */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #00AAFF;
+  font-size: 1.2rem; /* Increased font size */
+  font-weight: bold; /* Bold font for links */
+  font-family: "Inria Serif", serif;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff48a;
+  transform: translateZ(15px); /* 3D effect on links */
+}
+
+.nav-links li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fff48a;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+.toggle-menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* Hide toggle button by default */
+}
+
+/* Show toggle button on smaller screens */
+@media (max-width: 768px) {
+  .toggle-menu {
+    display: block;
+  }
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .nav-links {
+    gap: 30px;
+    display: none; /* Hide links by default in mobile view */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #000000;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .nav-links li {
+    text-align: center;
+    
+  }
+}

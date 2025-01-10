@@ -1,0 +1,41 @@
+.our-works {
+   margin: 0;
+   
+   text-align: center;
+   
+
+ }
+ crousel-work{
+   padding:0 200px;
+   height: 85vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #63abeb;
+ 
+ }
+
+ 
+ .works-container {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+ }
+ .logo1{
+   color:#2E837E;
+   font-size: 32px;
+   font-weight: 800;
+   text-decoration: none;
+   font-family:"Inknut Antiqua", serif;
+ }
+ 
+ .work-item {
+   margin: 10px;
+ }
+ 
+ .website-logo {
+   width: 100px; /* Adjust the size of the logo */
+   height: auto;
+   cursor: pointer;
+ }
+ 

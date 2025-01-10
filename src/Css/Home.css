@@ -1,0 +1,294 @@
+.home-aboutus {
+  background-color: #FCD358;
+  height: 100vh;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 70px;
+}
+
+.home-aboutus-heading {
+  font-family: "Adamina", serif;
+  font-size: 42px;
+}
+
+.home-aboutus-contanier {
+  width: 90%;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
+}
+
+.home-aboutus-contanierimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-aboutus-contanierlists {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center align text */
+  gap: 20px; /* Add spacing between items */
+  padding: 40px 20px;
+  background: #f9f9f9; /* Light background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-aboutus-contanierlists ol {
+  margin: 0;
+  padding: 0 20px;
+  list-style-position: inside; /* Keep list numbers inside */
+  text-align: left; /* Align the list text to the left */
+}
+
+.home-aboutus-contanierlists ol li {
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: "Inria Serif", serif;
+}
+
+.home-aboutus-contanierbutton {
+  padding: 10px 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #333333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-aboutus-contanierbutton:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.home-aboutus-contanierbutton:active {
+  background-color: #3e8e41;
+  transform: scale(1);
+}
+
+.home-services {
+  width: 100%;
+  background-color: #2E837E;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 70px;
+}
+
+.home-services-heading {
+  font-family: "Adamina", serif;
+  font-size: 42px;
+  color: #FCD358;
+}
+
+.home-services-contanier {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+}
+
+.servcies-model-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Reduced spacing below the image */
+}
+
+.Carousel-service-img-contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Reduced gap between cards */
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px; /* Optional to limit container width */
+}
+
+.service-img-contanier-service {
+  background-color: #FCD358;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Added padding to manage internal spacing */
+}
+
+.services-img-contanier-service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.services-img-contanier-text {
+  font-size: 24px;
+  color: #333;
+  margin: 5px 0; /* Reduced vertical spacing */
+  font-weight: bold;
+  font-family: "Inknut Antiqua", serif;
+}
+
+.serviceimg-contanier-servicename {
+  font-size: 18px;
+  color: #555;
+  margin: 5px 0; /* Reduced vertical spacing */
+  font-family: "Inria Serif", serif;
+}
+
+.service-img-contanier-button {
+  margin-top: 10px; /* Reduced spacing above the button */
+  padding: 10px 30px;
+  border: none;
+  background-color: #00AAFF;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-img-contanier-button:hover {
+  background-color: #0088CC;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .home-aboutus {
+    padding: 50px 40px;
+  }
+
+  .home-aboutus-heading {
+    font-size: 36px;
+  }
+
+  .home-services-heading {
+    font-size: 36px;
+  }
+
+  .home-aboutus-contanier {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid for smaller screens */
+  }
+
+  .home-aboutus-contanierlists {
+    padding: 30px 15px;
+  }
+
+  .home-aboutus-contanierbutton {
+    font-size: 0.9rem;
+  }
+
+  .home-services-contanier {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid for smaller screens */
+  }
+
+  .service-img-contanier-service {
+    width: 230px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-aboutus {
+    padding: 30px 20px;
+    height: auto;
+  }
+
+  .home-aboutus-heading {
+    font-size: 28px;
+  }
+
+  .home-services-heading {
+    font-size: 28px;
+  }
+
+  .home-aboutus-contanier {
+    grid-template-columns: 1fr; /* Stack items on top of each other for mobile */
+  }
+
+  .home-aboutus-contanierlists {
+    padding: 20px 10px;
+  }
+
+  .home-aboutus-contanierbutton {
+    padding: 8px 30px;
+    font-size: 0.8rem;
+  }
+
+  .home-services-contanier {
+    grid-template-columns: 1fr; /* Stack services on mobile */
+  }
+
+  .service-img-contanier-service {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-aboutus-heading {
+    font-size: 24px;
+  }
+  .home-aboutus-contanierimg-img{
+    width: 300px;
+  }
+
+  .home-services-heading {
+    font-size: 24px;
+  }
+
+  .home-aboutus-contanier {
+    padding: 20px;
+  }
+
+  .service-img-contanier-service {
+    width: 100%;
+    height: auto;
+  }
+  .home-services {
+    padding: 10px 0;
+    height: 100%;
+  }
+  .home-services-contanier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .service-img-contanier-service{
+    width: 300px;
+    padding: 20px 0;
+  }
+
+  .home-aboutus-contanierlists ol li {
+    font-size: 18px;
+  }
+
+  .service-img-contanier-button {
+    font-size: 14px;
+  }
+  .portfolio-container1{
+    display: flex
+
+;
+    
+    margin: 0 10px;
+  }
+}
+
+

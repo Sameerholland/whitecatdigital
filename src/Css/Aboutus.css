@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #FCD358; /* Yellow */
+  --secondary-color: #333333; /* Dark Gray */
+  --button-color: #FF6B6B; /* Red */
+  --link-color: #00AAFF; /* Blue */
+  --inknut-antiqua: "Inknut Antiqua", serif;
+  --inria-serif: "Inria Serif", serif;
+  --oleo-script: "Oleo Script Swash Caps", serif;
+  --adamina: "Adamina", serif;
+}
+
+.aboutus {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  padding: 0 300px;
+}
+
+.about-container {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: var(--primary-color); /* Yellow background */
+  color: var(--secondary-color); /* Dark Gray text */
+  font-family: var(--inknut-antiqua);
+  line-height: 1.6;
+}
+
+.about-container h1 {
+  color: var(--secondary-color); /* Dark Gray text */
+  font-family: var(--oleo-script);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-container h2 {
+  color: var(--secondary-color); /* Dark Gray text */
+  font-family: var(--inria-serif);
+  margin-top: 20px;
+}
+
+.about-container p, .about-container ul {
+  color: var(--secondary-color); /* Dark Gray text */
+  font-size: 18px;
+  font-family: var(--adamina);
+  margin-bottom: 15px;
+}
+
+.about-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-container a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-family: var(--inria-serif);
+  transition: color 0.3s;
+}
+
+.about-container a:hover {
+  color: var(--button-color); /* Red text on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .aboutus {
+     padding: 0 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutus {
+     padding: 0 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutus {
+     flex-direction: column;
+     padding: 0 50px;
+  }
+
+  .about-container {
+     padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutus {
+     margin: 20px 0;
+     padding: 0 20px;
+  }
+
+  .about-container {
+     font-size: 16px;
+  }
+
+  .about-container h1 {
+     font-size: 24px;
+  }
+
+  .about-container h2 {
+     font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-container {
+     font-size: 14px;
+  }
+
+  .about-container h1 {
+     font-size: 20px;
+  }
+
+  .about-container h2 {
+     font-size: 18px;
+  }
+}

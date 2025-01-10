@@ -1,0 +1,138 @@
+/* Payment Page Container */
+.payment-page {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(to bottom, #f9d423, #ff4e50);
+   color: #fff;
+   font-family: 'Montserrat', sans-serif;
+   padding: 2rem;
+ }
+ 
+ /* Heading */
+ .payment-heading {
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   text-align: center;
+   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+ }
+ 
+ /* Form */
+ .payment-form {
+   background: #fff;
+   padding: 2rem;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   width: 100%;
+   max-width: 400px;
+ }
+ 
+ /* Form Group */
+ .form-group {
+   margin-bottom: 1.5rem;
+ }
+ 
+ .form-group label {
+   display: block;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 0.5rem;
+ }
+ 
+ .form-group input {
+   width: 100%;
+   padding: 0.8rem;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   font-size: 1rem;
+   transition: border-color 0.3s ease;
+ }
+ 
+ .form-group input:focus {
+   outline: none;
+   border-color: #ff4e50;
+   box-shadow: 0 0 5px rgba(255, 78, 80, 0.5);
+ }
+ 
+ /* Pay Button */
+ .pay-button {
+   background: linear-gradient(to right, #f9d423, #ff4e50);
+   color: #fff;
+   border: none;
+   padding: 1rem;
+   width: 100%;
+   font-size: 1.2rem;
+   font-weight: bold;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: transform 0.3s ease, background 0.3s ease;
+ }
+ 
+ .pay-button:hover {
+   transform: translateY(-3px);
+   background: linear-gradient(to right, #ff4e50, #f9d423);
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+   .payment-heading {
+     font-size: 2rem;
+   }
+ 
+   .payment-form {
+     padding: 1.5rem;
+   }
+ 
+   .pay-button {
+     font-size: 1rem;
+     padding: 0.8rem;
+   }
+ }
+ 
+ @media (max-width: 480px) {
+  .payment-page{
+    padding: 0 2rem;
+  }
+   .payment-heading {
+     font-size: 1.8rem;
+   }
+ 
+   .form-group label {
+     font-size: 0.9rem;
+   }
+   
+   .form-group input {
+     font-size: 0.9rem;
+     padding: 0.7rem;
+   }
+ 
+   .pay-button {
+     font-size: 0.9rem;
+   }
+ }
+
+ .checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: #007bff; /* Change to your preferred color */
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-group label {
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+ 
